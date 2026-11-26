@@ -1,179 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivam Tiwari | Web Developer</title>
+  <meta name="theme-color" content="#090c14" />
+  <meta name="description" content="The portfolio of Shivam Kumar Tiwari, a computer science student interested in software development, full-stack development, and cloud computing." />
+  <title>Shivam Kumar Tiwari — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/36ddcc3288.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar">
-    <div class="logo">
-      <div class="logo-text">S</div>
-      <p>Shivam</p>
-      <span>Web Developer</span>
-    </div>
-    <nav class="nav">
-      <a href="#hero" onclick="showSection('hero-section')">Home</a>
-      <a href="#about" onclick="showSection('about-section')">About</a>
-      <a href="#skills" onclick="showSection('skills-section')">My Skills</a>
-      <a href="#projects" onclick="showSection('projects-section')">Projects</a>
-      <a href="#contact" onclick="showSection('contact-section')">Contact</a>
-    </nav>
-    <div class="sidebar-footer">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/shivamkrtiwari" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/builtbyshivam" target="_blank"><i class="fab fa-github"></i></a>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Shivam Tiwari, home"><span class="brand-mark">S<span>.</span></span><span class="brand-copy">SHIVAM TIWARI<small>SOFTWARE DEVELOPER</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation"><a href="#hero" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    <a class="header-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE &amp; ENGINEERING</p><h1 id="hero-title">Hi, I’m <span class="name-gradient">Shivam Kumar<br class="desktop-break" /> Tiwari.</span></h1><p class="hero-description">I’m a developer focused on <span class="rotating-role">software development</span><span class="cursor">_</span>, full-stack development, and cloud computing.</p><div class="hero-actions"><a href="#projects" class="button button-primary">Explore my work <span aria-hidden="true">↘</span></a><a href="#contact" class="button button-quiet">Contact me <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-socials" aria-label="Social profiles"><a href="https://github.com/builtbyshivam" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 18.13V22"/><circle cx="4" cy="4" r="2"/></svg> GitHub</a><a href="https://www.linkedin.com/in/shivamkrtiwari" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a></div>
       </div>
-    </div>
-  </aside>
-
-  <!-- Hero Section -->
-  <main class="hero-section section" id="hero-section">
-    <div class="hero-text">
-      <p class="code">&lt;h1&gt;</p>
-      <h1>Hi,<br />I'm <span class="name">Shivam</span>,<br />web developer</h1>
-      <p class="code">&lt;/h1&gt;</p>
-      <p class="subtitle">&lt;p&gt; Full Stack Learner / Cloud Computing Enthusiast &lt;/p&gt;</p>
-      <a href="#contact" class="btn" onclick="showSection('contact-section')">Contact me!</a>
-    </div>
+      <div class="hero-art" aria-label="Decorative code editor illustration" role="img"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="code-window"><div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>shivam.ts</span><span class="window-menu">···</span></div><div class="code-body"><div class="code-line"><span class="line-num">01</span><code><b>const</b> developer = {</code></div><div class="code-line"><span class="line-num">02</span><code>&nbsp; name: <em>'Shivam'</em>,</code></div><div class="code-line"><span class="line-num">03</span><code>&nbsp; focus: [</code></div><div class="code-line"><span class="line-num">04</span><code>&nbsp;&nbsp; <em>'Full-stack'</em>,</code></div><div class="code-line"><span class="line-num">05</span><code>&nbsp;&nbsp; <em>'Cloud'</em></code></div><div class="code-line"><span class="line-num">06</span><code>&nbsp; ],</code></div><div class="code-line"><span class="line-num">07</span><code>&nbsp; build: () =&gt; <strong>greatThings</strong>()</code></div><div class="code-line"><span class="line-num">08</span><code>};<span class="typing-cursor"></span></code></div></div><div class="window-bottom"><span><i></i> Ready to build</span><span>UTF-8 · JavaScript</span></div></div><div class="floating-chip chip-top"><span>⌘</span> Building with intent</div><div class="floating-chip chip-bottom"><span class="chip-spark">✳</span> Always learning</div><div class="art-cross cross-one">＋</div><div class="art-cross cross-two">＋</div></div>
+      <a href="#about" class="scroll-cue"><span class="scroll-line"></span><span>SCROLL TO EXPLORE</span><span class="scroll-arrow">↓</span></a><div class="hero-index" aria-hidden="true">01 <span>/</span> 05</div>
+    </section>
+    <section class="section content-section about-section" id="about" aria-labelledby="about-title"><div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME <span>01 — 05</span></p><h2 id="about-title">Curious by nature.<br /><span class="muted-heading">Builder by choice.</span></h2></div>
+      <div class="about-grid"><div class="about-copy"><p class="lead-copy">Hello! I’m <strong>Shivam Kumar Tiwari</strong>, currently pursuing a B.Tech in Computer Science Engineering at Chandigarh University.</p><p>My interests lie in full-stack development, cloud computing, and building practical solutions that address real-world needs. I enjoy solving complex problems through code and exploring how software can make everyday work better.</p><p>I’ve worked on projects including AISM, College Nest, and Future Gaze, and I’m continuing to grow my skills across software development.</p><div class="about-note"><span class="note-icon">✳</span><span>Currently pursuing my degree<br /><strong>Chandigarh University · 2023–2027</strong></span></div></div>
+        <div class="education"><div class="education-heading"><h3>Education</h3><span>THE JOURNEY SO FAR</span></div><div class="education-list"><article class="edu-card"><span class="edu-dot"></span><div class="edu-meta"><span>2023 — 2027</span><span class="edu-tag current-tag">IN PROGRESS</span></div><h4>B.Tech, Computer Science &amp; Engineering</h4><p>Chandigarh University</p><div class="edu-score"><span>CGPA</span><strong>8.56<small> / 10</small></strong></div></article><article class="edu-card"><span class="edu-dot"></span><div class="edu-meta"><span>2022</span><span class="edu-tag">CLASS XII</span></div><h4>Senior Secondary, CBSE — Science</h4><p>Kendriya Vidyalaya, Pushp Vihar</p><div class="edu-score"><span>PERCENTAGE</span><strong>92.00<small>%</small></strong></div></article><article class="edu-card"><span class="edu-dot"></span><div class="edu-meta"><span>2020</span><span class="edu-tag">CLASS X</span></div><h4>Secondary, CBSE</h4><p>Kendriya Vidyalaya, Pushp Vihar</p><div class="edu-score"><span>PERCENTAGE</span><strong>89.60<small>%</small></strong></div></article></div></div></div>
+    </section>
+    <section class="section content-section skills-section" id="skills" aria-labelledby="skills-title"><div class="section-heading"><p class="eyebrow">TOOLS OF THE TRADE <span>02 — 05</span></p><h2 id="skills-title">A growing toolkit<span class="accent-dot">.</span></h2><p class="section-intro">Technologies and concepts I work with as I learn and build.</p></div><div class="skills-grid">
+      <article class="skill-card"><div class="skill-card-top"><span class="skill-icon">&lt;/&gt;</span><span class="skill-number">01</span></div><h3>Programming languages</h3><p>Writing logic, solving problems, learning by building.</p><div class="skill-tags"><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span></div></article><article class="skill-card"><div class="skill-card-top"><span class="skill-icon">◈</span><span class="skill-number">02</span></div><h3>Frontend</h3><p>Building clear, responsive interfaces for the web.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>React</span><span>Vite</span><span>Tailwind CSS</span></div></article><article class="skill-card"><div class="skill-card-top"><span class="skill-icon">⌘</span><span class="skill-number">03</span></div><h3>Backend</h3><p>Exploring server-side development and APIs.</p><div class="skill-tags"><span>Java</span><span>Spring Boot</span><span>REST APIs</span></div></article><article class="skill-card"><div class="skill-card-top"><span class="skill-icon">◉</span><span class="skill-number">04</span></div><h3>Databases</h3><p>Working with relational data and persistence.</p><div class="skill-tags"><span>MySQL</span><span>PostgreSQL</span></div></article><article class="skill-card skill-card-wide"><div class="skill-card-top"><span class="skill-icon">✳</span><span class="skill-number">05</span></div><h3>Tools &amp; foundations</h3><p>Core concepts and tools that support my development workflow.</p><div class="skill-tags"><span>Data Structures &amp; Algorithms</span><span>Git</span><span>GitHub</span><span>Cloud Computing</span><span>AWS basics</span><span>GCP basics</span></div></article>
+    </div></section>
+    <section class="section content-section projects-section" id="projects" aria-labelledby="projects-title"><div class="section-heading projects-heading"><div><p class="eyebrow">SELECTED WORK <span>03 — 05</span></p><h2 id="projects-title">Things I’ve <span class="muted-heading">been building.</span></h2></div><span class="project-count">06 <span>PROJECTS</span></span></div><div class="projects-grid">
+      <article class="project-card project-aism"><div class="project-visual visual-aism"><div class="visual-label">SAFETY SYSTEM <span>01</span></div><span class="mockup-badge">CONCEPT PREVIEW · NOT A SCREENSHOT</span><div class="radar"><i></i><i></i><i></i><b></b><span class="radar-sweep"></span></div><div class="sensor-label sensor-a">GAS <b>●</b></div><div class="sensor-label sensor-b">MOTION <b>●</b></div><div class="sensor-label sensor-c">FIRE <b>●</b></div></div><div class="project-info"><div class="project-kicker">HARDWARE · MONITORING</div><h3>AISM</h3><p class="project-subtitle">Advanced Integrated Safety Monitoring Device</p><p>A multifunctional safety device integrating hazard alert sensors and CCTV monitoring.</p><div class="project-tags"><span>Arduino Uno</span><span>ESP32</span><span>Sensors</span></div></div></article>
+      <article class="project-card project-future"><div class="project-visual visual-future"><div class="visual-label">CAREER COMPASS <span>02</span></div><span class="mockup-badge">CONCEPT PREVIEW · NOT A SCREENSHOT</span><div class="orbit-graphic"><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orbit-ring ring-c"></div><span class="orbit-center">✳</span><span class="orbit-point point-a">AI</span><span class="orbit-point point-b">SK</span><span class="orbit-point point-c">↗</span></div><div class="visual-caption">FIND YOUR NEXT DIRECTION</div></div><div class="project-info"><div class="project-kicker">AI · CAREER DISCOVERY</div><h3>Future Gaze</h3><p class="project-subtitle">AI-Powered Career Path Predictor</p><p>An AI-driven mobile app in development to help students and young professionals explore career paths based on skills, industry trends, and personal preferences.</p><div class="project-tags"><span>AI-assisted</span><span>Mobile app</span><span>Career tools</span></div></div></article>
+      <article class="project-card project-college"><div class="project-visual visual-college"><div class="visual-label">CAMPUS LIFE <span>03</span></div><span class="mockup-badge">CONCEPT PREVIEW · NOT A SCREENSHOT</span><div class="campus-window"><div class="campus-bar"><i></i><i></i><i></i><span>college nest</span></div><div class="campus-content"><div class="campus-side"></div><div class="campus-main"><b></b><b></b><b></b><div class="campus-tiles"><i></i><i></i><i></i></div></div></div></div><span class="campus-spark spark-a">✳</span><span class="campus-spark spark-b">✳</span></div><div class="project-info"><div class="project-kicker">PROJECT</div><h3>College Nest</h3><p class="project-subtitle">A project in my portfolio</p><p>A project from my portfolio. More details will be added as project information is available.</p><div class="project-tags"><span>College Nest</span></div></div></article>
+      <article class="project-card project-inventory"><div class="project-visual visual-inventory"><div class="visual-label">INVENTORY OVERVIEW <span>04</span></div><span class="mockup-badge">CONCEPT PREVIEW · NOT A SCREENSHOT</span><div class="inventory-ui"><div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div><div class="inventory-main"><div class="inventory-title"></div><div class="inventory-metrics"><i></i><i></i><i></i></div><div class="inventory-chart"><span style="--h:35%"></span><span style="--h:52%"></span><span style="--h:45%"></span><span style="--h:76%"></span><span style="--h:58%"></span><span style="--h:90%"></span><span style="--h:67%"></span></div></div></div></div><div class="project-info"><div class="project-kicker">FULL STACK · WEB APP</div><h3>Smart Inventory Management System</h3><p class="project-subtitle">Products, made easier to manage</p><p>A full-stack platform for product and inventory operations, with CRUD APIs, category filtering, search, and price-based queries.</p><div class="project-tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>REST APIs</span></div></div></article>
+      <article class="project-card project-testing"><div class="project-visual visual-testing"><div class="visual-label">TEST SUITE <span>05</span></div><span class="mockup-badge">CONCEPT PREVIEW · NOT A SCREENSHOT</span><div class="test-terminal"><div class="terminal-head"><span>● ● ●</span><span>quality-checks</span></div><div class="test-row"><span class="test-check">✓</span><span>Test generation</span><b>PASS</b></div><div class="test-row"><span class="test-check">✓</span><span>JUnit execution</span><b>PASS</b></div><div class="test-row"><span class="test-check">✓</span><span>Coverage report</span><b>PASS</b></div><div class="coverage"><span>CODE COVERAGE</span><strong>JaCoCo</strong><i><b></b></i></div></div></div><div class="project-info"><div class="project-kicker">AI · QUALITY ASSURANCE</div><h3>Automated Software Testing Platform</h3><p class="project-subtitle">AI-assisted testing &amp; quality assurance</p><p>A platform in development combining AI-assisted test generation with automated execution and code coverage analysis.</p><div class="project-tags"><span>Java</span><span>Spring Boot</span><span>Gemini API</span><span>JUnit 5</span><span>JaCoCo</span></div></div></article>
+      <article class="project-card project-sorting"><div class="project-visual visual-sorting"><div class="visual-label">SORT IN PROGRESS <span>06</span></div><span class="mockup-badge">CONCEPT PREVIEW · NOT A SCREENSHOT</span><div class="sort-bars"><i style="--bar:28%;--delay:0"></i><i style="--bar:62%;--delay:1"></i><i style="--bar:41%;--delay:2"></i><i style="--bar:82%;--delay:3"></i><i style="--bar:51%;--delay:4"></i><i style="--bar:72%;--delay:5"></i><i style="--bar:34%;--delay:6"></i><i style="--bar:91%;--delay:7"></i><i style="--bar:57%;--delay:8"></i><i style="--bar:45%;--delay:9"></i><i style="--bar:77%;--delay:10"></i><i style="--bar:37%;--delay:11"></i></div><div class="sort-labels"><span>COMPARE</span><span>SWAP</span><span>REPEAT</span></div></div><div class="project-info"><div class="project-kicker">JAVA · VISUALIZATION</div><h3>Sorting Algorithm Visualizer</h3><p class="project-subtitle">See the logic come to life</p><p>An interactive Java desktop app that animates sorting in real time, showing how elements are compared, swapped, and arranged.</p><div class="project-tags"><span>Java</span><span>JavaFX</span><span>Data Structures</span></div></div></article>
+    </div></section>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-glow" aria-hidden="true"></div><div class="contact-content"><p class="eyebrow">HAVE A PROJECT IN MIND? <span>04 — 05</span></p><h2 id="contact-title">Let’s build something<br /><span class="name-gradient">together.</span></h2><p class="contact-description">I’m open to opportunities, collaborations, and a good tech conversation. I’d love to hear from you.</p><a class="button button-primary contact-email" href="mailto:shivamkr2708@gmail.com">shivamkr2708@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/shivamkrtiwari" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/builtbyshivam" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div></div><div class="contact-side-note"><span class="status-dot"></span> OPEN TO CONNECT</div></section>
   </main>
-
-  <!-- About Section -->
-  <section class="about-section section" id="about-section" style="display: none;">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>Hello! I'm <strong>Shivam Kumar Tiwari</strong>, currently pursuing B.Tech in Computer Science Engineering at Chandigarh University (2023–2027). My interests lie in full‑stack development, cloud computing, and building practical solutions that address real‑world needs.</p>
-      <p>I have completed projects such as <strong>AISM</strong>, <strong>College Nest</strong>, and <strong>Future Gaze</strong>. I'm proficient in Python, C++, Java, HTML, CSS, JavaScript and enjoy solving complex problems through code.</p>
-    
-      <h3 style="margin-top: 30px; color: #00e5ff;">Education</h3>
-      <ul style="list-style: none; padding: 0; margin-top: 10px;">
-        <li style="margin-bottom: 20px;">
-          <strong>Bachelor of Technology (B.Tech), Computer Science & Engineering</strong><br>
-          Chandigarh University<br>
-          CGPA: 8.56/10<br>
-          <small style="color: #888;">2023 – 2027</small>
-        </li>
-        <li style="margin-bottom: 20px;">
-          <strong>Senior Secondary (XII), CBSE – Science</strong><br>
-          Kendriya Vidyalaya, Pushp Vihar<br>
-          Percentage: 92.00%<br>
-          <small style="color: #888;">2022</small>
-        </li>
-        <li>
-          <strong>Secondary (X), CBSE</strong><br>
-          Kendriya Vidyalaya, Pushp Vihar<br>
-          Percentage: 89.60%<br>
-          <small style="color: #888;">2020</small>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills-section section" id="skills-section" style="display: none;">
-    <div class="skills-content">
-      <h2>My Skills</h2>
-      <ul class="skill-list">
-        <li>Python</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>HTML &amp; CSS</li>
-        <li>JavaScript</li>
-        <li>Cloud Computing (AWS / GCP basics)</li>
-        <li>Full-Stack Development</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="projects-section section" id="projects-section" style="display: none;">
-    <div class="projects-content">
-      <h2>My Projects</h2>
-
-      <!-- Existing Project 1 -->
-      <div class="project">
-        <h3>AISM (Advance Integrated Safety Monitoring Device)</h3>
-        <p><strong>Mar 2025 - Apr 2025</strong></p>
-        <p>Developed a multi-functional safety device integrating hazard alerter sensors and CCTV monitoring.</p>
-        <p><strong>Tools:</strong> Arduino Uno, ESP32, Ultrasonic Sensor, Gas Sensor, Fire Sensor</p>
-      </div>
-
-      <!-- Existing Project 2 -->
-      <div class="project">
-        <h3>Future Gaze (AI-Powered Career Path Predictor App)</h3>
-        <p><strong>Apr 2025 - June 2025</strong></p>
-        <p>Leading the development of Future Gaze, an AI-driven mobile app aimed at helping students and young professionals predict potential career paths based on their skills, industry trends, and personal preferences.</p>
-      </div>
-
-      <!-- New Project 4: Smart Inventory Management System -->
-      <div class="project">
-        <h3>Smart Inventory Management System</h3>
-        <p><strong>Full-Stack Web Application</strong></p>
-        <p>
-          Developed a full-stack inventory management platform to streamline
-          product management and inventory operations. Implemented RESTful APIs
-          for product CRUD operations, category-based filtering, search, and
-          price-based queries. Integrated a React frontend with a Spring Boot
-          backend and MySQL database for efficient data management.
-        </p>
-        <p><strong>Technologies:</strong> Java, Spring Boot, React, Vite, Tailwind CSS, MySQL, REST APIs</p>
-      </div>
-
-      <!-- New Project 5: Automated Software Testing Platform -->
-      <div class="project">
-        <h3>Automated Software Testing Platform</h3>
-        <p><strong>AI-Powered Testing &amp; Quality Assurance</strong></p>
-        <p>
-          Building an intelligent software testing platform that combines
-          AI-assisted test generation with automated test execution. Integrated
-          Gemini API for AI capabilities, JUnit 5 for test automation, and
-          JaCoCo for code coverage analysis. The platform aims to simplify
-          software testing workflows and improve code quality.
-        </p>
-        <p><strong>Technologies:</strong> Java, Spring Boot, React, MySQL, Gemini API, JUnit 5, JaCoCo</p>
-      </div>
-
-      <!-- New Project 6: Sorting Algorithm Visualizer -->
-      <div class="project">
-        <h3>Sorting Algorithm Visualizer</h3>
-        <p><strong>Interactive Java Desktop Application</strong></p>
-        <p>
-          Developed an interactive desktop application that visualizes
-          sorting algorithms through real-time animations. Allows users
-          to observe how elements are compared, swapped, and arranged,
-          making algorithm behavior easier to understand. Built using
-          JavaFX with a focus on interactive algorithm visualization.
-        </p>
-        <p><strong>Technologies:</strong> Java, JavaFX, Data Structures &amp; Algorithms</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact-section section" id="contact-section" style="display: none;">
-    <div class="contact-content">
-      <h2>Contact Me</h2>
-      <p>I'm always open to new opportunities, collaborations, or just a good tech conversation. Feel free to connect with me through the platforms below:</p>
-      
-      <ul class="contact-info">
-        <li><strong>Email:</strong> <a href="mailto:shivamkr2708@gmail.com">shivamkr2708@gmail.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shivamkrtiwari" target="_blank">linkedin.com/in/shivamkrtiwari</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/builtbyshivam" target="_blank">github.com/builtbyshivam</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Scroll Indicator -->
-  <div class="scroll-indicator">← Scroll down</div>
-
-  <!-- JS -->
-  <script src="script.js"></script>
+  <footer class="site-footer"><a class="footer-brand" href="#hero">SKT<span>.</span></a><span>Designed &amp; built by Shivam Kumar Tiwari</span><span>© <span id="year">2026</span> · ALL RIGHTS RESERVED</span><a class="back-top" href="#hero">BACK TO TOP ↑</a></footer>
 </body>
 </html>
